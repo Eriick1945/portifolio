@@ -6,7 +6,7 @@ export default function NotFoundScreen(){
         <>
         <Stack.Screen options={{title:"ops! essa tela ainda não existe rs"}} />
         <View style={styles.container}>
-            <Link href="C:\Projetos\meu-projeto\portifolio\app\+not-found.tsx"> Vá para a tela inicial</Link>
+            <Link href="/(home)"> Vá para a tela inicial</Link>
         </View>
         </>
 
