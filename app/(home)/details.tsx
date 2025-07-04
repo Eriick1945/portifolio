@@ -1,6 +1,6 @@
 import {View, StyleSheet, Text} from 'react-native';
 
-export default function detailsScreen (){
+export default function DetailsScreen (){
     return(
         <View style={styles.container}>
             <Text> Detalhes </Text>

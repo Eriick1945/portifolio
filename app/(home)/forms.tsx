@@ -1,6 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
 import { useForm, Controller } from "react-hook-form";
+import {yupResolver} from '@hookform/resolvers/yup';
+import * as yup from 'yup'; 
+
+const scheme = yup.object ({
+    username: yup.string().required(" Informe o nome do colaborador ")
+
+})   
 
 export default function formsScreen() {
     const { control, handleSubmit, formState: { errors } } = useForm({});
